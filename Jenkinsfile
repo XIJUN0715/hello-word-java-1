@@ -8,7 +8,7 @@ pipeline {
 
     stages {
 
-        sta     ge('Verify Environment') {
+        sta     ge('vomVerify Environment') {
             steps {
                 bat 'echo JAVA_HOME=%JAVA_HOME%'
                 bat 'java -version'
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') { //change the below path to your repositoy url
             steps {
-                git branch: 'master', url: 'https://github.com/nawaf83/hello-world-java-6.git'
+                git branch: 'master', url: 'https://github.com/XIJUN0715/hello-word-java-1.git'
             }
         }
 
