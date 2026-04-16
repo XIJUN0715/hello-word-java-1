@@ -8,7 +8,7 @@ pipeline {
 
     stages {
 
-        sta     ge('vomVerify Environment') {
+        stage('vomVerify Environment') {
             steps {
                 bat 'echo JAVA_HOME=%JAVA_HOME%'
                 bat 'java -version'
